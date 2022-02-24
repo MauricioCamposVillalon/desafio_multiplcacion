@@ -16,9 +16,23 @@ let validar = () =>{
     
 }
 
-let multi = ()
+let multiplicar = (numero) =>{
+    let num = numero;
+    let res;
+    let fac =1;
+    for(let i=1;i <= num;i++){
+       res= i*num;
+       console.log(i,"x",num,"=",res);
+    }
+    for (let i = num; i>=1; i--){
+        fac = i * fac;
+    }
+        console.log("El Factorial de", num, " es :",fac);
+    
+}
 
 
-let n1 = validar()
 
-console.log(validar())
+
+let n1 = validar();
+multiplicar(n1);
